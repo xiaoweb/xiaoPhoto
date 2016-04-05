@@ -24,6 +24,7 @@ module.exports = function *(next) {
                     })
                 });
                 if(save){
+                    this.session.user = this.request.body.user;
                     this.body = {
                         code:200,
                         url:'./'

@@ -42,6 +42,7 @@ define(function () {
                 passwd:paws.val()
             },function (data) {
                 if(data.code == 200){
+                    thas.disabled = false;
                     document.location.href = data.url;
                     return;
                 }else if(data.user_err){
@@ -108,6 +109,7 @@ define(function () {
                 yzm:regYzm.val()
             },function (data) {
                 if(data.code == 200){
+                    thas.disabled = false;
                     document.location.href = data.url;
                     return;
                 }else if(data.user_err){

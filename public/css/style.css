@@ -127,6 +127,10 @@ html, body {
     cursor: pointer;
 }
 
+input.xiao-btn[disabled]{
+    background:url(../images/loadding.gif) center no-repeat #ccc;text-indent:-1000px;
+}
+
 .user-btn {
     width: 100%;
     background: #188dd5;
