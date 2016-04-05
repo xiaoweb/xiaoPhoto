@@ -70,7 +70,7 @@ html, body {
     display: inline-block;
     position: absolute;
     top: 1px;
-    left: 0;
+    left: 1px;
 }
 
 .login-passwd {
@@ -124,6 +124,7 @@ html, body {
     vertical-align: middle;
     border: none;
     margin: 12px 0;
+    cursor: pointer;
 }
 
 .user-btn {

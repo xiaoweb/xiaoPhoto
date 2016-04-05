@@ -17,7 +17,7 @@ var koa = require('koa'),
 app.env = 'NODE_ENV';
 
 //开发环境
-global.env = app.env = 'dev';
+/*global.env = app.env = 'dev';*/
 
 //http跳https
 app.use(function*(next) {
@@ -77,14 +77,14 @@ app.use(function*(next) {
 routes(router);
 app.use(router.routes());
 
-/*//连接数据库
-mongoose.connect('mongodb://xiaoweb:1111@ds061701.mongolab.com:61701/xiaoweb', function (err) {
+//连接数据库
+mongoose.connect('mongodb://xiaoweb:900815@ds061701.mongolab.com:61701/xiaoweb', function (err) {
     if (err) {
         console.log(err);
     } else {
         console.log("连接成功")
     }
-});*/
+});
 
 var options = {
     key: fs.readFileSync(__dirname + '/xiaoweb.cn.pem'),

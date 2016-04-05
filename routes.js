@@ -2,6 +2,7 @@
 var index = require('./routes/index'),
     user = require('./routes/user/user'),
     login = require('./routes/user/login'),
+    reg = require('./routes/user/reg'),
     logout = require('./routes/user/logout'),
     video = require('./routes/video');
 
@@ -15,13 +16,14 @@ var admin = require('./routes/admin/admin'),
 
 function routes(router) {
     //首页
-    router.get("/", admin);
+    router.get("/", index);
 
     //用户
     router.get("/user", user);
 
     //登录注册页
     router.all('/login', login);
+    router.post('/reg', reg);
 
     //注销登录
     router.get('/logout',logout)
