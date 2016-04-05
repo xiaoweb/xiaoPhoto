@@ -1,0 +1,44 @@
+//- Created by  RD-小小WEB on 2016/1/22.
+extends layout
+
+block content
+    .header
+        .am-g
+            h1 Web video
+            p
+                | 免费、高速、跨平台视频解决方案
+        hr
+    .am-g
+        .am-u-lg-6.am-u-md-8.am-u-sm-centered
+            h3 登录
+            hr
+            .am-btn-group
+                a.am-btn.am-btn-secondary.am-btn-sm(href='#')
+                    i.am-icon-github.am-icon-sm
+                    |  Github
+                a.am-btn.am-btn-success.am-btn-sm(href='#')
+                    i.am-icon-google-plus-square.am-icon-sm
+                    |  Google+
+                a.am-btn.am-btn-primary.am-btn-sm(href='#')
+                    i.am-icon-stack-overflow.am-icon-sm
+                    |  stackOverflow
+            br
+            br
+            form.am-form(method='post')
+                label(for='email') 邮箱:
+                input#email(type='email', name='email', value='')
+                br
+                label(for='password') 密码:
+                input#password(type='password', name='password', value='')
+                br
+                label(for='remember-me')
+                    input#remember-me(type='checkbox')
+                    |         记住密码
+                br
+                .am-cf
+                    input.am-btn.am-btn-primary.am-btn-sm.am-fl(type='submit', name='', value='登 录')
+                    input.am-btn.am-btn-default.am-btn-sm.am-fr(type='submit', name='', value='忘记密码 ^_^? ')
+            hr
+            p © 2016 xiaoweb.cn.
+
+

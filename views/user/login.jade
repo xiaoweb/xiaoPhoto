@@ -1,0 +1,44 @@
+//
+   Created by zhou on 16/4/4.
+extends ../layout
+
+block content
+    .head
+        .content
+            .logo
+                a(href='./')
+                    img(src='/images/logo.png.png')
+    .login
+        .login-banner
+        .content
+            #login-box.login-box
+                .login-box-title 帐户登录
+                .user-text
+                    label
+                        i.user-ico.login-user
+                        input.login-input#login-user(type='text', placeholder='手机/邮箱')
+                    label
+                        i.user-ico.login-passwd
+                        input.login-input(type='password', placeholder='密码')
+                .login-link
+                    a(href='#') 忘记密码?
+                    a#reg.user-reg(href='#') 免费注册
+                .user-submit
+                    input.xiao-btn.user-btn#login-btn(type='button', value='登录')
+            #reg-box.login-box.hide
+                .login-box-title 帐户注册
+                .user-text
+                    label
+                        i.user-ico.login-user
+                        input.login-input(type='text', placeholder='手机/邮箱')
+                    label
+                        i.user-ico.login-passwd
+                        input.login-input(type='password', placeholder='密码')
+                    label
+                        i.user-ico.login-passwd
+                        input.login-input.reg-m(type='text', placeholder='手机验证码')
+                        input.login-input.reg-m-get(type='button', value='获取')
+                .login-link
+                    a#login.user-reg(href='#') 立即登录
+                .user-submit
+                    input.xiao-btn.user-btn#reg-btn(type='button', value='免费注册')

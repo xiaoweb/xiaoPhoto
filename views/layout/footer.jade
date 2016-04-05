@@ -1,0 +1,12 @@
+//- 加载前端模块
+.bottom
+    .content
+        | Copyright©2016  小小相册xiaoweb.cn 版权所有
+if model
+    script
+        |require([
+        each val, i in model
+            | '#{val}'
+            if i < model.length - 1
+                |,
+        | ])

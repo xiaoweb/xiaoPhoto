@@ -1,0 +1,21 @@
+//- Created by  RD-小小WEB on 2016/1/22.
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        title React test
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name='format-detection', content='telephone=no')
+        meta(name='renderer', content='webkit')
+        meta(http-equiv='Cache-Control', content='no-siteapp')
+        link(rel='stylesheet', href='/css/admin.css')
+        link(rel='alternate icon', type='image/png', href='/i/favicon.png')
+    body
+        block content
+        if (env == 'dev')
+            script(src='https://xiaoweb.cn:8080/app.js')
+        else
+            script(src='/js/admin/app.js')
+
+
