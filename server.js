@@ -17,7 +17,7 @@ var koa = require('koa'),
 app.env = 'NODE_ENV';
 
 //开发环境
-/*global.env = app.env = 'dev';*/
+global.env = app.env = 'dev';
 
 //http跳https
 app.use(function*(next) {

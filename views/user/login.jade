@@ -21,7 +21,7 @@ block content
                         i.user-ico.login-passwd
                         input.login-input#login-paws(type='password', placeholder='密码')
                 .login-link
-                    a(href='#') 忘记密码?
+                    a(href='javascript:layer.msg("建设中")') 忘记密码?
                     a#reg.user-reg(href='#') 免费注册
                 .user-submit
                     input.xiao-btn.user-btn#login-btn(type='button', value='登录')
@@ -37,7 +37,7 @@ block content
                     label
                         i.user-ico.login-passwd
                         input.login-input.reg-m#reg-yzm(type='text', placeholder='验证码')
-                        input.login-input.reg-m-get(type='button', value='获取')
+                        input.login-input.reg-m-get(type='button', value='获取',onclick='layer.tips("随便填写6位即可",this)')
                 .login-link
                     a#login.user-reg(href='#') 立即登录
                 .user-submit

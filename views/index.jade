@@ -2,3 +2,7 @@ extends layout
 
 block content
     h1 #{val}
+    if (env == 'dev')
+        script(src='https://xiaoweb.cn:8080/app.js')
+    else
+        script(src='/js/admin/app.js')
