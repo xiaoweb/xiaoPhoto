@@ -12,9 +12,11 @@ html
         link(rel='stylesheet', href='#{staticUrl}/css/style.css')
     body
         block content
-        if (env == 'dev')
-            script(src='https://127.0.0.1:8080/app.js')
-        else
+        if (devHost)
+            script(src='#{devHost}:8080/app.js')
+        else if (env == 'env')
             script(src='/js/admin/app.js')
+        else
+            script(src='#{staticUrl}/js/admin/app.js')
 
 

@@ -35,7 +35,7 @@ app.use(function *(next) {
     yield next;
     var log = time.toLocaleString() + " " + this.ip + " " + this.method + " " + this.host + this.url + " " + this.status + " " + (new Date().getTime() - time.getTime()).toString() + 'ms';
     fs.appendFile(__dirname + '/log/log.log', log + '\n', function (err) {
-        err ? console.error(err) : app.env == "development" && console.info(log);
+        err ? console.error(err) : app.env == "dev" && console.info(log);
     })
 });
 
@@ -106,21 +106,25 @@ if (webConfig.dev) {
     global.staticUrl = '';       //如果是开发环境使用本地静态文件
 
     //在开发环境中启用webpack-dev-server 热更新功能
-    var webpack = require('webpack');
-    var webpackDevServer = require('webpack-dev-server');
+    if(webConfig.ReactDev){
+        global.devHost = webConfig.Host;
 
-    var webpackConfig = require("./webpack.config.js");
+        var webpack = require('webpack');
+        var webpackDevServer = require('webpack-dev-server');
 
-    webpackConfig.entry.app.unshift("webpack-dev-server/client?" + webConfig.Host + ":8080", "webpack/hot/only-dev-server");
-    webpackConfig.output.publicPath = webConfig.Host + ':8080/';
-    var compiler = webpack(config);
-    var devServer = new webpackDevServer(compiler, {
-        hot: true,
-        https: true,
-        cert: options.cert,
-        key: options.key
-    });
-    devServer.listen(8080);
+        var webpackConfig = require("./webpack.config.js");
+
+        webpackConfig.entry.app.unshift("webpack-dev-server/client?" + webConfig.Host + ":8080", "webpack/hot/only-dev-server");
+        webpackConfig.output.publicPath = webConfig.Host + ':8080/';
+        var compiler = webpack(webpackConfig);
+        var devServer = new webpackDevServer(compiler, {
+            hot: true,
+            https: true,
+            cert: webConfig.sslPem,
+            key: webConfig.sslPem
+        });
+        devServer.listen(8080);
+    }
 }
 
 
