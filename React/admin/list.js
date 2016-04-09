@@ -2,8 +2,21 @@
  * Created by zhou on 16/4/8.
  */
 let React = require('react');
+let PubSub = require('pubsub-js');
+
+const host = staticHost;
 
 let List = React.createClass({
+    observer(msg, data){
+        this.getList();
+    },
+    getList(){
+        $.post('/list', data=> {
+            this.setState({
+                list: data.items
+            })
+        }, 'json')
+    },
     getInitialState(){
         return {
             list: []
@@ -13,19 +26,19 @@ let List = React.createClass({
         return <ul>
             {
                 this.state.list.map((t, i)=> {
-                return <li key={i}>
-                        <img src={'http://7xsn4t.com2.z0.glb.qiniucdn.com/'+t.key+'!100'} />
+                    return <li key={i}>
+                        <img src={host+'/'+t.key+'!100'}/>
                     </li>
                 })
             }
         </ul>
     },
     componentDidMount(){
-        $.post('/list', data=> {
-            this.setState({
-                list: data.items
-            })
-        }, 'json')
+        this.getList();
+        PubSub.subscribe('updateList', this.observer)
+    },
+    componentWillUnmount(){
+        PubSub.unsubscribe(this.observer);
     }
 })
 

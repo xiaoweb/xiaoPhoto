@@ -14,7 +14,7 @@ var http = require('http');
 
 var admin = require('./routes/admin/admin'),
     adminIndex = require('./routes/admin/index'),
-    qiniuConfig = require('./routes/qiniu.config');
+    qiniuConfig = require('./config');
 
 /*生成七牛密钥*/
 qiniu.conf.ACCESS_KEY = qiniuConfig.ACCESS_KEY;

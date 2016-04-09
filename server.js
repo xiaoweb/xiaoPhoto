@@ -11,16 +11,21 @@ var koa = require('koa'),
     path = require('path'),
     static = require('koa-static-cache'),
     parse = require('co-body'),
-    session = require('koa-session');
+    session = require('koa-session'),
+    config = require('./config');
 
 //环境 NODE_ENV || development || production
 app.env = 'NODE_ENV';
 
 //开发环境
-/*global.env = app.env = 'dev';*/
+global.env = app.env = 'dev';
 
 //静态服务器
-global.static = 'https://7xsn4t.com2.z0.glb.qiniucdn.com'
+global.static = global.staticHost = config.staticHost;
+//如果是开发环境使用本地静态文件
+if(app.env == 'dev'){
+    global.static = '';
+}
 
 //http跳https
 app.use(function*(next) {
@@ -106,8 +111,8 @@ if( app.env ==='dev'){
 
     var config = require("./webpack.config.js");
 
-    config.entry.app.unshift("webpack-dev-server/client?https://xiaoweb.cn:8080", "webpack/hot/only-dev-server");
-    config.output.publicPath = 'https://xiaoweb.cn:8080/';
+    config.entry.app.unshift("webpack-dev-server/client?https://127.0.0.1:8080", "webpack/hot/only-dev-server");
+    config.output.publicPath = 'https://127.0.0.1:8080/';
     var compiler = webpack(config);
     var devServer = new webpackDevServer(compiler,{
         hot:true,

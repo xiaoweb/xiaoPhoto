@@ -1,6 +1,8 @@
 /**
  * Created by zhouliying1 on 2016/4/7.
  */
+let PubSub = require('pubsub-js');
+
 var uploader = Qiniu.uploader({
     runtimes: 'html5,flash,html4',      // 上传模式,依次退化
     browse_button: 'pickfiles',         // 上传选择的点选按钮，**必需**
@@ -66,7 +68,8 @@ var uploader = Qiniu.uploader({
             var res = $.parseJSON(info);
             var sourceLink = domain + res.key; //获取上传成功后的文件的Url
             $('#test').append('<img src="' + sourceLink + '" />')*/
-            alert(123)
+            alert('上传成功');
+            PubSub.publish('updateList');
         },
         'Error': function (up, err, errTip) {
             //上传出错时,处理相关的事情
