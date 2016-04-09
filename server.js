@@ -1,31 +1,24 @@
 /** * Created with WebStorm. * User: RD-小小WEB * Date: 2015/12/26 * Time: ‏‎22:19 */
 var koa = require('koa'),
-  http = require('http'),
-  https = require('https'),
-  router = require('koa-router')(),
-  app = koa(),
-  jade = require('jade'),
-  routes = require('./routes'),
-  fs = require('fs'),
-  mongoose = require('mongoose'),
-  path = require('path'),
-  statics = require('koa-static-cache'),
-  parse = require('co-body'),
-  session = require('koa-session'),
-  webConfig = require('./webConfig');
+    http = require('http'),
+    https = require('https'),
+    router = require('koa-router')(),
+    app = koa(),
+    jade = require('jade'),
+    routes = require('./routes'),
+    fs = require('fs'),
+    mongoose = require('mongoose'),
+    path = require('path'),
+    statics = require('koa-static-cache'),
+    parse = require('co-body'),
+    session = require('koa-session'),
+    webConfig = require('./webConfig');
 
 //环境 NODE_ENV || development || production
 app.env = 'NODE_ENV';
 
-//开发环境
-global.env = app.env = 'dev';
-
 //静态服务器
 global.staticUrl = global.staticHost = webConfig.staticHost;
-//如果是开发环境使用本地静态文件
-if (app.env == 'dev') {
-    global.staticUrl = '';
-}
 
 //http跳https
 app.use(function*(next) {
@@ -86,33 +79,40 @@ routes(router);
 app.use(router.routes());
 
 //连接数据库
-mongoose.connect(webConfig.dbType + '://' + webConfig.dbUser + ':' + webConfig.dbPasswd + '@' + webConfig.dbHost + ':' + webConfig.dbPort + '/' + webConfig.dbName, function (err) {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log("mongodb数据库连接成功")
-    }
-});
+mongoose.connect(webConfig.dbType +
+    '://' + webConfig.dbUser +
+    ':' + webConfig.dbPasswd +
+    '@' + webConfig.dbHost +
+    ':' + webConfig.dbPort +
+    '/' + webConfig.dbName,
+    function (err) {
+        if (err) {
+            throw err;
+        } else {
+            console.log("mongodb数据库连接成功");
+            //连接成功后开始监听服务
+            app.listen(80);     //http
 
-var options = {
-    key: webConfig.sslPem,
-    cert: webConfig.sslPem
-};
+            https.createServer({        //https
+                key: webConfig.sslPem,
+                cert: webConfig.sslPem
+            }, app.callback()).listen(443);
+        }
+    });
 
-//端口
-app.listen(80);
-https.createServer(options, app.callback()).listen(443);
+//开发环境
+if (webConfig.dev) {
+    global.env = app.env = 'dev';
+    global.staticUrl = '';       //如果是开发环境使用本地静态文件
 
-
-//React热替换
-if (app.env === 'dev') {
+    //在开发环境中启用webpack-dev-server 热更新功能
     var webpack = require('webpack');
     var webpackDevServer = require('webpack-dev-server');
 
-    var config = require("./webpack.config.js");
+    var webpackConfig = require("./webpack.config.js");
 
-    config.entry.app.unshift("webpack-dev-server/client?" + webConfig.Host + ":8080", "webpack/hot/only-dev-server");
-    config.output.publicPath = webConfig.Host + ':8080/';
+    webpackConfig.entry.app.unshift("webpack-dev-server/client?" + webConfig.Host + ":8080", "webpack/hot/only-dev-server");
+    webpackConfig.output.publicPath = webConfig.Host + ':8080/';
     var compiler = webpack(config);
     var devServer = new webpackDevServer(compiler, {
         hot: true,
@@ -122,6 +122,5 @@ if (app.env === 'dev') {
     });
     devServer.listen(8080);
 }
-
 
 
