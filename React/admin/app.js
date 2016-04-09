@@ -4,14 +4,8 @@
 let React = require('react');
 let ReactDOM = require('react-dom');
 
-import $ from "jquery";
+import List from "list";
 require('updatedata');
 
-let Test = React.createClass({
-    render(){
-        return <div>
-            hello 小小相册
-        </div>
-    }
-})
-ReactDOM.render(<Test/>,document.getElementById('test3'));
+
+ReactDOM.render(<List />,document.getElementById('test3'));

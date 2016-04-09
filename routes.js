@@ -34,12 +34,17 @@ function routes(router) {
         uptoken.saveKey = utils.md5(this.session.user) + "/$(etag)$(fname)";
         this.body = {"uptoken": uptoken.token()}
     })
-    router.get('/test', function *(next) {
+    //用户文件列表
+    router.post('/list', function *(next) {
         var datas = yield new Promise(reso=> {
             qiniu.rsf.listPrefix('xiaoweb', utils.md5(this.session.user), '', '', function (err, ret, res) {
                 if (res.statusCode == 200) {
+                    ret.items = ret.items.map(t=>{
+                        return {
+                            key:t.key
+                        }
+                    })
                     reso(ret)
-                    //console.log(ret);
                 } else {
                     reso(err);
                 }

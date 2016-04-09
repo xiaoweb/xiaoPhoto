@@ -8,7 +8,8 @@ var UserSchema = new Schema({
     passwd : String,
     name : String,
     age : String,
-    time : Date
+    time : Date,
+    path:String
 });
 
 var User = mongoose.model("users",UserSchema);

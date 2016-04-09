@@ -17,7 +17,10 @@ var koa = require('koa'),
 app.env = 'NODE_ENV';
 
 //开发环境
-global.env = app.env = 'dev';
+/*global.env = app.env = 'dev';*/
+
+//静态服务器
+global.static = 'https://7xsn4t.com2.z0.glb.qiniucdn.com'
 
 //http跳https
 app.use(function*(next) {
