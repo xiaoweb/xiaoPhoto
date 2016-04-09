@@ -1,18 +1,18 @@
 /** * Created with WebStorm. * User: RD-小小WEB * Date: 2015/12/26 * Time: ‏‎22:19 */
 var koa = require('koa'),
-    http = require('http'),
-    https = require('https'),
-    router = require('koa-router')(),
-    app = koa(),
-    jade = require('jade'),
-    routes = require('./routes'),
-    fs = require('fs'),
-    mongoose = require('mongoose'),
-    path = require('path'),
-    static = require('koa-static-cache'),
-    parse = require('co-body'),
-    session = require('koa-session'),
-    config = require('./config');
+  http = require('http'),
+  https = require('https'),
+  router = require('koa-router')(),
+  app = koa(),
+  jade = require('jade'),
+  routes = require('./routes'),
+  fs = require('fs'),
+  mongoose = require('mongoose'),
+  path = require('path'),
+  statics = require('koa-static-cache'),
+  parse = require('co-body'),
+  session = require('koa-session'),
+  webConfig = require('./webConfig');
 
 //环境 NODE_ENV || development || production
 app.env = 'NODE_ENV';
@@ -21,10 +21,10 @@ app.env = 'NODE_ENV';
 global.env = app.env = 'dev';
 
 //静态服务器
-global.static = global.staticHost = config.staticHost;
+global.staticUrl = global.staticHost = webConfig.staticHost;
 //如果是开发环境使用本地静态文件
-if(app.env == 'dev'){
-    global.static = '';
+if (app.env == 'dev') {
+    global.staticUrl = '';
 }
 
 //http跳https
@@ -51,9 +51,9 @@ app.use(session(app));
 app.keys = ['小小web'];
 
 //静态文件服务
-app.use(static({
+app.use(statics({
     dir: path.join(__dirname, 'public'),
-    gzip : true
+    gzip: true
 }));
 
 //模板引擎
@@ -86,17 +86,17 @@ routes(router);
 app.use(router.routes());
 
 //连接数据库
-mongoose.connect('mongodb://xiaoweb:900815@ds061701.mongolab.com:61701/xiaoweb', function (err) {
+mongoose.connect(webConfig.dbType + '://' + webConfig.dbUser + ':' + webConfig.dbPasswd + '@' + webConfig.dbHost + ':' + webConfig.dbPort + '/' + webConfig.dbName, function (err) {
     if (err) {
         console.log(err);
     } else {
-        console.log("连接成功")
+        console.log("mongodb数据库连接成功")
     }
 });
 
 var options = {
-    key: fs.readFileSync(__dirname + '/xiaoweb.cn.pem'),
-    cert: fs.readFileSync(__dirname + '/xiaoweb.cn.pem')
+    key: webConfig.sslPem,
+    cert: webConfig.sslPem
 };
 
 //端口
@@ -105,18 +105,18 @@ https.createServer(options, app.callback()).listen(443);
 
 
 //React热替换
-if( app.env ==='dev'){
+if (app.env === 'dev') {
     var webpack = require('webpack');
     var webpackDevServer = require('webpack-dev-server');
 
     var config = require("./webpack.config.js");
 
-    config.entry.app.unshift("webpack-dev-server/client?https://127.0.0.1:8080", "webpack/hot/only-dev-server");
-    config.output.publicPath = 'https://127.0.0.1:8080/';
+    config.entry.app.unshift("webpack-dev-server/client?" + webConfig.Host + ":8080", "webpack/hot/only-dev-server");
+    config.output.publicPath = webConfig.Host + ':8080/';
     var compiler = webpack(config);
-    var devServer = new webpackDevServer(compiler,{
-        hot:true,
-        https:true,
+    var devServer = new webpackDevServer(compiler, {
+        hot: true,
+        https: true,
         cert: options.cert,
         key: options.key
     });

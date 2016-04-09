@@ -23,7 +23,8 @@ module.exports = function*(next) {
                     msg:'密码错误'
                 }
             }else{
-                this.session.user = this.request.body.user;
+                this.session.user = data[0].user;
+                this.session.path = data[0].path;
                 this.body = {
                     code:200,
                     url:'./'

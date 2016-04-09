@@ -5,16 +5,14 @@ var index = require('./routes/index'),
     reg = require('./routes/user/reg'),
     logout = require('./routes/user/logout'),
     video = require('./routes/video'),
-    qiniu = require('qiniu'),
-    utils = require('./utils');
+    qiniu = require('qiniu');
 
-var videos = require('letvcloud-api');
 var http = require('http');
 
 
 var admin = require('./routes/admin/admin'),
     adminIndex = require('./routes/admin/index'),
-    qiniuConfig = require('./config');
+    qiniuConfig = require('./webConfig');
 
 /*生成七牛密钥*/
 qiniu.conf.ACCESS_KEY = qiniuConfig.ACCESS_KEY;
@@ -31,13 +29,13 @@ function routes(router) {
 
     //七牛密钥获取
     router.get('/uptoken', function *(next) {
-        uptoken.saveKey = utils.md5(this.session.user) + "/$(etag)$(fname)";
+        uptoken.saveKey = this.session.path + "/$(etag)$(fname)";
         this.body = {"uptoken": uptoken.token()}
     })
     //用户文件列表
     router.post('/list', function *(next) {
         var datas = yield new Promise(reso=> {
-            qiniu.rsf.listPrefix('xiaoweb', utils.md5(this.session.user), '', '', function (err, ret, res) {
+            qiniu.rsf.listPrefix('xiaoweb', this.session.path, '', '', function (err, ret, res) {
                 if (res.statusCode == 200) {
                     ret.items = ret.items.map(t=>{
                         return {
@@ -67,22 +65,6 @@ function routes(router) {
 
     //视频更改页
     router.all('/video', video);
-    router.post('/video/get_url', function*() {
-        var code = videos.getUrl({
-            userCode: 'fc9a96c2e6693683723474938115d3b1',
-            user_unique: 'suaoebrvbk',
-            api: 'video.upload.init',
-            video_name: this.request.body.fileName
-        })
-
-        var obj = yield new Promise(res=> {
-            http.get("http://api.letvcloud.com/open.php" + code, data=> {
-                res(data)
-            })
-        });
-
-        this.body = obj
-    })
 }
 
 
