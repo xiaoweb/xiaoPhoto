@@ -4371,3 +4371,219 @@
 2016-04-09 21:29:33 ::ffff:127.0.0.1 GET xiaoweb.cn/ 200 15ms
 2016-04-09 21:29:33 ::ffff:127.0.0.1 GET xiaoweb.cn/ 200 13ms
 2016-04-09 21:29:34 ::ffff:127.0.0.1 GET xiaoweb.cn/ 200 14ms
+2016-04-10 09:05:44 ::ffff:127.0.0.1 GET xiaoweb.cn/ 302 4ms
+2016-04-10 09:05:44 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 144ms
+2016-04-10 09:05:45 ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 200 9ms
+2016-04-10 09:05:45 ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 200 9ms
+2016-04-10 09:05:45 ::ffff:127.0.0.1 GET xiaoweb.cn/js/layer.js 200 2ms
+2016-04-10 09:05:45 ::ffff:127.0.0.1 GET xiaoweb.cn/js/requirejs.js 200 1ms
+2016-04-10 09:05:45 ::ffff:127.0.0.1 GET xiaoweb.cn/js/main.js 200 0ms
+2016-04-10 09:05:45 ::ffff:127.0.0.1 GET xiaoweb.cn/images/logo.png.png 200 1ms
+2016-04-10 09:05:45 ::ffff:127.0.0.1 GET xiaoweb.cn/js/skin/layer.css 200 0ms
+2016-04-10 09:05:45 ::ffff:127.0.0.1 GET xiaoweb.cn/images/login-banner.png 200 1ms
+2016-04-10 09:05:45 ::ffff:127.0.0.1 GET xiaoweb.cn/images/user-ico.png 200 1ms
+2016-04-10 09:05:45 ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 200 0ms
+2016-04-10 09:05:45 ::ffff:127.0.0.1 GET xiaoweb.cn/favicon.ico 404 0ms
+2016-04-10 09:05:58 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 58ms
+2016-04-10 09:05:58 ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 1ms
+2016-04-10 09:05:58 ::ffff:127.0.0.1 GET xiaoweb.cn/js/layer.js 304 2ms
+2016-04-10 09:05:58 ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 1ms
+2016-04-10 09:05:58 ::ffff:127.0.0.1 GET xiaoweb.cn/js/main.js 304 1ms
+2016-04-10 09:05:58 ::ffff:127.0.0.1 GET xiaoweb.cn/js/requirejs.js 304 1ms
+2016-04-10 09:05:58 ::ffff:127.0.0.1 GET xiaoweb.cn/images/logo.png.png 304 2ms
+2016-04-10 09:05:58 ::ffff:127.0.0.1 GET xiaoweb.cn/js/skin/layer.css 304 0ms
+2016-04-10 09:05:58 ::ffff:127.0.0.1 GET xiaoweb.cn/images/user-ico.png 304 1ms
+2016-04-10 09:05:58 ::ffff:127.0.0.1 GET xiaoweb.cn/images/login-banner.png 304 1ms
+2016-04-10 09:05:58 ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 0ms
+2016-04-10 09:06:01 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 33ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 1ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 1ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/js/layer.js 304 2ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/js/requirejs.js 304 1ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/js/main.js 304 1ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/images/logo.png.png 304 1ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/js/skin/layer.css 304 1ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/images/user-ico.png 304 1ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/images/login-banner.png 304 1ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 1ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 33ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 2ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 1ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/js/layer.js 304 1ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/js/requirejs.js 304 2ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/js/main.js 304 0ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/images/logo.png.png 304 1ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/js/skin/layer.css 304 0ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/images/login-banner.png 304 1ms
+2016-04-10 09:06:02 ::ffff:127.0.0.1 GET xiaoweb.cn/images/user-ico.png 304 1ms
+2016-04-10 09:06:03 ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 0ms
+2016-04-10 09:06:36 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 119ms
+2016-04-10 09:06:37 ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 1ms
+2016-04-10 09:06:50 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 121ms
+2016-04-10 09:06:51 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 54ms
+2016-04-10 09:06:52 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 33ms
+2016-04-10 09:06:52 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 26ms
+2016-04-10 09:06:53 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 14ms
+2016-04-10 09:06:53 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 20ms
+2016-04-10 09:06:53 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 20ms
+2016-04-10 09:06:53 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 23ms
+2016-04-10 09:09:11 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 34ms
+2016-04-10 09:09:13 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 24ms
+2016-04-10 09:09:29 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 25ms
+2016-04-10 09:09:29 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 16ms
+2016-04-10 09:09:29 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 17ms
+2016-04-10 09:09:29 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 16ms
+2016-04-10 09:09:29 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 17ms
+2016-04-10 09:09:34 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 20ms
+2016-04-10 09:09:34 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 22ms
+2016-04-10 09:09:34 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 22ms
+2016-04-10 09:09:35 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 23ms
+2016-04-10 09:09:58 ::ffff:127.0.0.1 POST xiaoweb.cn/login 200 1291ms
+2016-04-10 09:09:59 ::ffff:127.0.0.1 GET xiaoweb.cn/ 200 41ms
+2016-04-10 09:09:59 ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 2ms
+2016-04-10 09:09:59 ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 1ms
+2016-04-10 09:09:59 ::ffff:127.0.0.1 GET xiaoweb.cn/js/admin/app.js 200 3ms
+2016-04-10 09:09:59 ::ffff:127.0.0.1 GET xiaoweb.cn/uptoken 200 1ms
+2016-04-10 09:09:59 ::ffff:127.0.0.1 POST xiaoweb.cn/list 200 222ms
+2016-04-10 09:10:01 ::ffff:127.0.0.1 GET xiaoweb.cn/ 200 14ms
+2016-04-10 09:10:01 ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 1ms
+2016-04-10 09:10:01 ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 1ms
+2016-04-10 09:10:01 ::ffff:127.0.0.1 GET xiaoweb.cn/js/admin/app.js 304 1ms
+2016-04-10 09:10:01 ::ffff:127.0.0.1 GET xiaoweb.cn/uptoken 200 1ms
+2016-04-10 09:10:01 ::ffff:127.0.0.1 POST xiaoweb.cn/list 200 204ms
+2016-04-10 09:10:02 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 25ms
+2016-04-10 09:10:02 ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 0ms
+2016-04-10 09:10:03 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 25ms
+2016-04-10 09:10:03 ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 2ms
+2016-04-10 09:10:03 ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 1ms
+2016-04-10 09:10:03 ::ffff:127.0.0.1 GET xiaoweb.cn/js/layer.js 304 1ms
+2016-04-10 09:10:03 ::ffff:127.0.0.1 GET xiaoweb.cn/js/main.js 304 1ms
+2016-04-10 09:10:03 ::ffff:127.0.0.1 GET xiaoweb.cn/js/requirejs.js 304 1ms
+2016-04-10 09:10:03 ::ffff:127.0.0.1 GET xiaoweb.cn/images/logo.png.png 304 1ms
+2016-04-10 09:10:03 ::ffff:127.0.0.1 GET xiaoweb.cn/js/skin/layer.css 304 0ms
+2016-04-10 09:10:03 ::ffff:127.0.0.1 GET xiaoweb.cn/images/login-banner.png 304 2ms
+2016-04-10 09:10:03 ::ffff:127.0.0.1 GET xiaoweb.cn/images/user-ico.png 304 2ms
+2016-04-10 09:10:04 ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 1ms
+2016-04-10 09:10:10 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 32ms
+2016-04-10 09:10:14 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 23ms
+2016-04-10 09:10:14 ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 2ms
+2016-04-10 09:10:14 ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 1ms
+2016-04-10 09:10:14 ::ffff:127.0.0.1 GET xiaoweb.cn/js/layer.js 304 1ms
+2016-04-10 09:10:14 ::ffff:127.0.0.1 GET xiaoweb.cn/js/requirejs.js 304 1ms
+2016-04-10 09:10:14 ::ffff:127.0.0.1 GET xiaoweb.cn/js/main.js 304 1ms
+2016-04-10 09:10:14 ::ffff:127.0.0.1 GET xiaoweb.cn/images/logo.png.png 304 2ms
+2016-04-10 09:10:14 ::ffff:127.0.0.1 GET xiaoweb.cn/js/skin/layer.css 304 0ms
+2016-04-10 09:10:14 ::ffff:127.0.0.1 GET xiaoweb.cn/images/login-banner.png 304 1ms
+2016-04-10 09:10:14 ::ffff:127.0.0.1 GET xiaoweb.cn/images/user-ico.png 304 2ms
+2016-04-10 09:10:14 ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 0ms
+2016-04-10 09:10:17 ::ffff:127.0.0.1 GET xiaoweb.cn/ 200 10ms
+2016-04-10 09:10:17 ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 0ms
+2016-04-10 09:10:17 ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 1ms
+2016-04-10 09:10:17 ::ffff:127.0.0.1 GET xiaoweb.cn/js/admin/app.js 304 0ms
+2016-04-10 09:10:17 ::ffff:127.0.0.1 GET xiaoweb.cn/uptoken 200 1ms
+2016-04-10 09:10:17 ::ffff:127.0.0.1 POST xiaoweb.cn/list 200 251ms
+2016-04-10 09:10:24 ::ffff:127.0.0.1 GET xiaoweb.cn/ 302 1ms
+2016-04-10 09:10:24 ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 25ms
+2016-04-10 09:10:24 ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 2ms
+2016-04-10 09:10:24 ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 1ms
+2016-04-10 09:10:24 ::ffff:127.0.0.1 GET xiaoweb.cn/js/layer.js 304 1ms
+2016-04-10 09:10:24 ::ffff:127.0.0.1 GET xiaoweb.cn/js/requirejs.js 304 1ms
+2016-04-10 09:10:24 ::ffff:127.0.0.1 GET xiaoweb.cn/js/main.js 304 1ms
+2016-04-10 09:10:24 ::ffff:127.0.0.1 GET xiaoweb.cn/images/logo.png.png 304 0ms
+2016-04-10 09:10:24 ::ffff:127.0.0.1 GET xiaoweb.cn/js/skin/layer.css 304 0ms
+2016-04-10 09:10:24 ::ffff:127.0.0.1 GET xiaoweb.cn/images/login-banner.png 304 1ms
+2016-04-10 09:10:24 ::ffff:127.0.0.1 GET xiaoweb.cn/images/user-ico.png 304 0ms
+2016-04-10 09:10:24 ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 1ms
+2016-04-10 09:10:24 ::ffff:127.0.0.1 GET xiaoweb.cn/favicon.ico 404 0ms
+4/10/2016, 9:16:35 AM ::ffff:127.0.0.1 GET xiaoweb.cn/ 302 51ms
+4/10/2016, 9:16:35 AM ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 109ms
+4/10/2016, 9:16:35 AM ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 2ms
+4/10/2016, 9:16:35 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/layer.js 200 10ms
+4/10/2016, 9:16:35 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/requirejs.js 200 1ms
+4/10/2016, 9:16:35 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/main.js 200 1ms
+4/10/2016, 9:16:35 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 2ms
+4/10/2016, 9:16:35 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/skin/layer.css 304 0ms
+4/10/2016, 9:16:35 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/logo.png.png 304 0ms
+4/10/2016, 9:16:35 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/user-ico.png 200 0ms
+4/10/2016, 9:16:35 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/login-banner.png 304 1ms
+4/10/2016, 9:16:35 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 0ms
+4/10/2016, 9:16:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 45ms
+4/10/2016, 9:16:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 1ms
+4/10/2016, 9:16:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 1ms
+4/10/2016, 9:16:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/layer.js 304 0ms
+4/10/2016, 9:16:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/requirejs.js 304 1ms
+4/10/2016, 9:16:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/main.js 304 1ms
+4/10/2016, 9:16:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/skin/layer.css 304 0ms
+4/10/2016, 9:16:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/logo.png.png 304 1ms
+4/10/2016, 9:16:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/login-banner.png 304 0ms
+4/10/2016, 9:16:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/user-ico.png 304 1ms
+4/10/2016, 9:16:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 0ms
+4/10/2016, 9:16:41 AM ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 32ms
+4/10/2016, 9:16:41 AM ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 2ms
+4/10/2016, 9:16:41 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 1ms
+4/10/2016, 9:16:41 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/layer.js 304 1ms
+4/10/2016, 9:16:41 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/requirejs.js 304 1ms
+4/10/2016, 9:16:41 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/main.js 304 1ms
+4/10/2016, 9:16:41 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/skin/layer.css 304 0ms
+4/10/2016, 9:16:41 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/logo.png.png 304 0ms
+4/10/2016, 9:16:41 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/login-banner.png 304 1ms
+4/10/2016, 9:16:41 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/user-ico.png 304 1ms
+4/10/2016, 9:16:41 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 0ms
+4/10/2016, 9:16:42 AM ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 34ms
+4/10/2016, 9:16:42 AM ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 1ms
+4/10/2016, 9:16:42 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 0ms
+4/10/2016, 9:16:42 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/layer.js 304 0ms
+4/10/2016, 9:16:42 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/requirejs.js 304 0ms
+4/10/2016, 9:16:42 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/main.js 304 0ms
+4/10/2016, 9:16:42 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/skin/layer.css 304 0ms
+4/10/2016, 9:16:42 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/logo.png.png 304 0ms
+4/10/2016, 9:16:42 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/login-banner.png 304 1ms
+4/10/2016, 9:16:42 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/user-ico.png 304 0ms
+4/10/2016, 9:16:42 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 0ms
+4/10/2016, 9:22:36 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 0ms
+4/10/2016, 9:22:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 22ms
+4/10/2016, 9:22:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 0ms
+4/10/2016, 9:22:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/layer.js 304 0ms
+4/10/2016, 9:22:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/requirejs.js 304 1ms
+4/10/2016, 9:22:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/main.js 304 0ms
+4/10/2016, 9:22:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 1ms
+4/10/2016, 9:22:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/skin/layer.css 304 0ms
+4/10/2016, 9:22:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/logo.png.png 304 0ms
+4/10/2016, 9:22:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/login-banner.png 304 1ms
+4/10/2016, 9:22:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/user-ico.png 304 0ms
+4/10/2016, 9:22:40 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 1ms
+4/10/2016, 9:22:59 AM ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 27ms
+4/10/2016, 9:22:59 AM ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 1ms
+4/10/2016, 9:22:59 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 1ms
+4/10/2016, 9:22:59 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/layer.js 304 2ms
+4/10/2016, 9:22:59 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/requirejs.js 304 0ms
+4/10/2016, 9:22:59 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/main.js 304 0ms
+4/10/2016, 9:22:59 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/skin/layer.css 304 0ms
+4/10/2016, 9:22:59 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/logo.png.png 304 1ms
+4/10/2016, 9:22:59 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/login-banner.png 304 0ms
+4/10/2016, 9:22:59 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/user-ico.png 304 0ms
+4/10/2016, 9:23:00 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 1ms
+4/10/2016, 9:36:26 AM ::ffff:127.0.0.1 GET xiaoweb.cn/ 302 13ms
+4/10/2016, 9:36:26 AM ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 115ms
+4/10/2016, 9:36:26 AM ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 2ms
+4/10/2016, 9:36:26 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/layer.js 304 1ms
+4/10/2016, 9:36:26 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/requirejs.js 304 0ms
+4/10/2016, 9:36:26 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 0ms
+4/10/2016, 9:36:26 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/main.js 304 1ms
+4/10/2016, 9:36:26 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/skin/layer.css 304 0ms
+4/10/2016, 9:36:26 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/logo.png.png 304 1ms
+4/10/2016, 9:36:26 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/login-banner.png 304 1ms
+4/10/2016, 9:36:26 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/user-ico.png 304 1ms
+4/10/2016, 9:36:27 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 0ms
+4/10/2016, 9:36:28 AM ::ffff:127.0.0.1 GET xiaoweb.cn/ 302 1ms
+4/10/2016, 9:36:28 AM ::ffff:127.0.0.1 GET xiaoweb.cn/login 200 56ms
+4/10/2016, 9:36:28 AM ::ffff:127.0.0.1 GET xiaoweb.cn/css/style.css 304 1ms
+4/10/2016, 9:36:28 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/jquery.min.js 304 0ms
+4/10/2016, 9:36:28 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/main.js 304 1ms
+4/10/2016, 9:36:28 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/requirejs.js 304 1ms
+4/10/2016, 9:36:28 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/layer.js 304 1ms
+4/10/2016, 9:36:28 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/skin/layer.css 304 0ms
+4/10/2016, 9:36:28 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/logo.png.png 304 0ms
+4/10/2016, 9:36:28 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/login-banner.png 304 0ms
+4/10/2016, 9:36:28 AM ::ffff:127.0.0.1 GET xiaoweb.cn/images/user-ico.png 304 0ms
+4/10/2016, 9:36:28 AM ::ffff:127.0.0.1 GET xiaoweb.cn/js/login.js 304 0ms

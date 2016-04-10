@@ -1,10 +1,12 @@
 {
   "name": "xiaoPhoto",
   "version": "0.0.1",
-  "description": "基于KOAJS",
+  "description": "基于KOAJS,React",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack -p && \"./utils/qrsync\" ./qiniuSync.json",
+    "syncStatic": "cd ./ &&\"./utils/qrsync\" ./qiniuSync.json",
+    "webpack": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -15,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/xiaoweb/xiaoPhoto/issues"
   },
-  "homepage": "https://github.com/xiaoweb/xiaoPhoto#readme",
+  "homepage": "https://www.xiaoweb.cn",
   "dependencies": {
     "co-body": "^4.0.0",
     "jade": "^1.11.0",
@@ -23,7 +25,6 @@
     "koa-router": "^5.4.0",
     "koa-session": "^3.3.1",
     "koa-static-cache": "^3.1.6",
-    "letvcloud-api": "^1.0.6",
     "md5": "^2.1.0",
     "mongoose": "^4.4.11",
     "qiniu": "^6.1.9"
