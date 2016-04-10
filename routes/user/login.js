@@ -2,7 +2,7 @@
 var User =  require('../../model/Users');
 module.exports = function*(next) {
     if(this.method == 'GET'){
-        this.body = this.request.res.render('user/login', {model:['login']})
+        this.body = this.request.res.render('user/login', {model:[staticUrl+'/js/login.js']})
     }else{
         var data = yield User.find({
             user:this.request.body.user

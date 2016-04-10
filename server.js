@@ -33,9 +33,23 @@ app.use(function*(next) {
 app.use(function *(next) {
     var time = new Date();
     yield next;
-    var log = time.toLocaleString() + " " + this.ip + " " + this.method + " " + this.host + this.url + " " + this.status + " " + (new Date().getTime() - time.getTime()).toString() + 'ms';
-    fs.appendFile(__dirname + '/log/log.log', log + '\n', function (err) {
-        err ? console.error(err) : app.env == "dev" && console.info(log);
+    var log = time.toLocaleString() + " " + this.ip + " " + this.method + " " + this.url + " " + this.status + " " + (new Date().getTime() - time.getTime()).toString() + 'ms';
+    fs.appendFile(__dirname + '/log/log.log', log + '\n', err=>{
+        err ? console.error(err) : app.env == "dev" && (()=>{
+            switch (this.status){
+                case 404:
+                    console.error(log);
+                    break;
+                case 200:
+                    console.log('\x1b[32m',log);
+                    break;
+                case 304:
+                    console.log('\x1b[37m',log);
+                    break;
+                default:
+                    console.error(log);;
+            }
+        })();
     })
 });
 
