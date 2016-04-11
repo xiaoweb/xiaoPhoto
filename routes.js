@@ -29,6 +29,7 @@ function routes(router) {
     //七牛密钥获取
     router.get('/uptoken', function *(next) {
         uptoken.saveKey = this.session.path + "/$(etag)$(fname)";
+        uptoken.mimeLimit = 'image/*';
         this.body = {"uptoken": uptoken.token()}
     })
     //用户文件列表
