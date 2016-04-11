@@ -4,7 +4,6 @@ var index = require('./routes/index'),
     login = require('./routes/user/login'),
     reg = require('./routes/user/reg'),
     logout = require('./routes/user/logout'),
-    video = require('./routes/video'),
     qiniu = require('qiniu');
 
 var http = require('http');
