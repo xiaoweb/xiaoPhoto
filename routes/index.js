@@ -2,7 +2,7 @@
 
 module.exports = function *(next){
     if(this.session.user){
-        this.body = this.res.render("admin/index",{val:this.session.user})
+        this.body = this.res.render("user/index",{val:this.session.user})
     }else{
         this.redirect('/login')
     }

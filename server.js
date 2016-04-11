@@ -47,7 +47,7 @@ app.use(function *(next) {
                     console.log('\x1b[37m',log);
                     break;
                 default:
-                    console.error(log);;
+                    console.error(log);
             }
         })();
     })

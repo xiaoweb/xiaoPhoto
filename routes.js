@@ -63,8 +63,6 @@ function routes(router) {
     router.get('/admin', adminIndex);    //首页
     router.get('/admin/*', adminIndex);
 
-    //视频更改页
-    router.all('/video', video);
 }
 
 
