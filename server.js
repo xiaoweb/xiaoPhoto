@@ -128,6 +128,8 @@ if (webConfig.dev) {
 
         var webpackConfig = require("./webpack.config.js");
 
+        webpackConfig.plugins.shift(0); //在dev环境中去除webpack生产环境变量
+
         webpackConfig.entry.app.unshift("webpack-dev-server/client?" + webConfig.Host + ":8080", "webpack/hot/only-dev-server");
         webpackConfig.output.publicPath = webConfig.Host + ':8080/';
         var compiler = webpack(webpackConfig);

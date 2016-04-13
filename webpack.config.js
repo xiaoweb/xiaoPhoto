@@ -1,9 +1,10 @@
 /** * Created with WebStorm. * User: RD-小小WEB * Date: 2016/1/25 * Time: 11:57 */
 
 var path = require('path');
-var webpack = require('webpack');
+var webpack = require('webpack'),
+    webConfig = require('./webConfig');
 
-module.exports = {
+var webpackConfig =  {
     entry: {
         //管理后台
         app: ['./React/admin/app.js']
@@ -31,9 +32,17 @@ module.exports = {
         ]
     },
     plugins: [
+        new webpack.DefinePlugin({
+            "process.env": {
+                NODE_ENV: JSON.stringify("production")
+            }
+        }),
         new webpack.HotModuleReplacementPlugin()
     ]
 }
+
+
+module.exports = webpackConfig;
 
 
 
