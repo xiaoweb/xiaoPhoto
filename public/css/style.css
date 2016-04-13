@@ -162,3 +162,11 @@ input.xiao-btn[disabled]{
 
 .hide{display: none;}
 .show{display: block;}
+.hideop{opacity: 0;}
+
+.loading-bar{height: 2px;background:#188dd5;position: fixed;left:0;top:0;width: 0;z-index:1000;transition:0.3s;
+}
+
+.user-img-list{}
+.user-img-list li{display: inline-block;margin: 5px;cursor: pointer;}
+.user-nav-top{margin: 10px 0;}

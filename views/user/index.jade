@@ -3,16 +3,16 @@ extends layout
 
 block content
     script(type="text/javascript" src="#{staticUrl}/js/jquery.min.js")
-    script(type='text/javascript',src='https://staticfile.qnssl.com/Plupload/2.1.1/plupload.full.min.js')
-    script(type='text/javascript',src='https://staticfile.qnssl.com/Plupload/2.1.1/i18n/zh_CN.js')
-    script(type='text/javascript',src='https://staticfile.qnssl.com/qiniu-js-sdk/1.0.14-beta/qiniu.min.js')
+    script(type='text/javascript' src='https://staticfile.qnssl.com/Plupload/2.1.1/plupload.full.min.js')
+    script(type='text/javascript' src='https://staticfile.qnssl.com/Plupload/2.1.1/i18n/zh_CN.js')
+    script(type='text/javascript' src='https://staticfile.qnssl.com/qiniu-js-sdk/1.0.14-beta/qiniu.min.js')
+    script(type="text/javascript" src="#{staticUrl}/js/layer.js")
+    script(type="text/javascript" src="#{staticUrl}/js/extend/layer.ext.js")
     script(type='text/javascript') var staticHost = '#{staticHost}';
-    h1 #{val}
-    a(href='/logout') 退出
     #test
-    #test2
-    #test3
-    input#pickfiles(type='submit')
+    #loading
+    #test3(style="width:1200px;margin:0 auto;")
+    #uploadbtn
 
     
 

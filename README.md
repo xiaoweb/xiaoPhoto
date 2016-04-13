@@ -14,8 +14,17 @@
  - qiniu (七牛云存储)
  - webpack (开发环境)
  - babel (开发环境)
- 
-## 关于
+
+## 发布并同步CDN
+`npm run-script build`
+
+### 同步到CND
+`npm run-script syncStatic`
+
+## 编译发布文件
+`npm run-script webpack`
+
+# 关于
 你可能对这个项目感兴趣,但clone下来发现无法运行？或者出现https连接不安全提示？
 这是因为项目中关于隐私的config文件与ssl证书我并没有上传，至于为什么我想不用说明了吧！
 如果你想运行自己的config，可以阅读代码,自己新建一个config。

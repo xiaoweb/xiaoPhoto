@@ -4,7 +4,8 @@ var index = require('./routes/index'),
     login = require('./routes/user/login'),
     reg = require('./routes/user/reg'),
     logout = require('./routes/user/logout'),
-    qiniu = require('qiniu');
+    qiniu = require('qiniu'),
+    moment = require('moment');
 
 var http = require('http');
 
@@ -28,7 +29,7 @@ function routes(router) {
 
     //七牛密钥获取
     router.get('/uptoken', function *(next) {
-        uptoken.saveKey = this.session.path + "/$(etag)$(fname)";
+        uptoken.saveKey = this.session.path + "/" + moment().format('YYYYMMDD')+ "/$(etag)$(fname)";
         uptoken.mimeLimit = 'image/*';
         this.body = {"uptoken": uptoken.token()}
     })
@@ -37,9 +38,9 @@ function routes(router) {
         var datas = yield new Promise(reso=> {
             qiniu.rsf.listPrefix('xiaoweb', this.session.path, '', '', function (err, ret, res) {
                 if (res.statusCode == 200) {
-                    ret.items = ret.items.map(t=>{
+                    ret.items = ret.items.map(t=> {
                         return {
-                            key:t.key
+                            key: t.key
                         }
                     })
                     reso(ret)
