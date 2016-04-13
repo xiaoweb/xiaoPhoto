@@ -10,7 +10,7 @@ html
         meta(name='renderer', content='webkit')
         meta(http-equiv='Cache-Control', content='no-siteapp')
         link(rel='stylesheet', href='#{staticUrl}/css/amazeui.css')
-        link(rel='stylesheet', href='#{staticUrl}/css/style.css')
+        link(rel='stylesheet', href='#{staticUrl}/css/style.css?time=125')
     body
         block content
         if (devHost)
@@ -18,6 +18,6 @@ html
         else if (env == 'env')
             script(src='/js/admin/app.js')
         else
-            script(src='#{staticUrl}/js/admin/app.js')
+            script(src='#{staticUrl}/js/admin/app.js?time=126')
 
 

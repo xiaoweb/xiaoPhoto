@@ -170,3 +170,7 @@ input.xiao-btn[disabled]{
 .user-img-list{}
 .user-img-list li{display: inline-block;margin: 5px;cursor: pointer;}
 .user-nav-top{margin: 10px 0;}
+#content{width: 1200px;margin:0 auto;}
+@media only screen and (max-width: 1200px){
+    #content{width:100%;}
+}

@@ -33,11 +33,11 @@ let List = React.createClass({
     },
     render(){
         return <div>
-            <AvgGrid id="user-img-list" sm={4} md={4} lg={6}>
+            <AvgGrid id="user-img-list" sm={2} md={4} lg={6}>
                 {
                     this.state.list.map((t, i)=> {
                         return <li key={i}>
-                            <img data-layer-src={host+'/'+t.key+'!800'} width="80%" style={{margin:"10%"}} src={host+'/'+t.key+'!100'}  />
+                            <img data-layer-src={host+'/'+t.key+'!800'} width="80%" style={{margin:"10%"}} src={host+'/'+t.key+'!230'}  />
                         </li>
                     })
                 }

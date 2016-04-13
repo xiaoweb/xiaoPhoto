@@ -28,6 +28,6 @@
 你可能对这个项目感兴趣,但clone下来发现无法运行？或者出现https连接不安全提示？
 这是因为项目中关于隐私的config文件与ssl证书我并没有上传，至于为什么我想不用说明了吧！
 如果你想运行自己的config，可以阅读代码,自己新建一个config。
-如果你不想阅读代码，可以给我发[邮件](mailto://635156603@qq.com),或者在这个[QQ群](http://jq.qq.com/?_wv=1027&k=ZWTWIS)中询问.
+如果你不想阅读代码，可以给我发[邮件](mailto://front-end@xiaoweb.cn),或者在这个[QQ群](http://jq.qq.com/?_wv=1027&k=ZWTWIS)中询问.
 
 

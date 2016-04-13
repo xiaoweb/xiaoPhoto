@@ -34,7 +34,7 @@ let UpLoadBtn = React.createClass({
             unique_names: false,              // 默认 false，key 为文件名。若开启该选项，JS-SDK 会为每个文件自动生成key（文件名）
             save_key: true,                  // 默认 false。若在服务端生成 uptoken 的上传策略中指定了 `sava_key`，则开启，SDK在前端将不对key进行任何处理
             domain: 'http://static.xiaoweb.cn/',     // bucket 域名，下载资源时用到，**必需**
-            container: 'test3',             // 上传区域 DOM ID，默认是 browser_button 的父元素，
+            container: ReactDom.findDOMNode(this).parentNode,             // 上传区域 DOM ID，默认是 browser_button 的父元素，
             max_file_size: '100mb',             // 最大文件体积限制
             flash_swf_url: 'https://staticfile.qnssl.com/Plupload/2.1.1/Moxie.swf',  //引入 flash,相对路径
             max_retries: 3,                     // 上传失败最大重试次数

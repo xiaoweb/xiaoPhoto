@@ -34,4 +34,4 @@ let UserIndex = React.createClass({
     }
 })
 
-ReactDOM.render(<UserIndex />,document.getElementById('test3'));
+ReactDOM.render(<UserIndex />,document.getElementById('content'));
