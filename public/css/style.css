@@ -174,3 +174,5 @@ input.xiao-btn[disabled]{
 @media only screen and (max-width: 1200px){
     #content{width:100%;}
 }
+
+ul.am-nav  li a.active{color:#fff;background:#0e90d2;}
