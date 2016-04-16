@@ -3,14 +3,20 @@
  */
 import Content from 'content'
 import List from 'list'
-import Upload from 'updatedata'
+import utils from "utils";
 
 var rootRoute = {
     path: '/',
     component: Content,
     indexRoute: {component:List},
     childRoutes: [
-        {path:'upload',component: Upload},
+        {path:'upload',getComponents(nextState, callback) {
+            utils.loading();
+            require([], function (require) {
+                utils.loading(100);
+                callback(null, require('updatedata'))
+            })
+        }},
         {path:'list',component: List},
         {path:'*',component: List},
     ]

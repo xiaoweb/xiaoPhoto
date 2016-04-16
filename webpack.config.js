@@ -4,7 +4,7 @@ var path = require('path');
 var webpack = require('webpack'),
     webConfig = require('./webConfig');
 
-var webpackConfig =  {
+var webpackConfig = {
     entry: {
         //管理后台
         app: ['./React/admin/app.js']
@@ -13,7 +13,7 @@ var webpackConfig =  {
         filename: '[name].js',
         chunkFilename: '[hash].block.js',
         path: path.resolve(__dirname, 'public/js/admin'),
-        publicPath: '/js/admin/'
+        publicPath: webConfig.staticHost + '/js/admin/'
     },
     resolve: {
         root: [
